@@ -26,7 +26,7 @@ public class Executor {
 		
 		Segmento s1 = new Segmento(c1);
 		String result1 = s1.getTipoSegmento().toString();
-		System.out.println(result1);
+		System.out.println(result1); // PRINTAR TIPO
 		
 		c2.setNome("Gustavo");
 		c2.setEmail("gustavo@braz.com");
@@ -37,7 +37,7 @@ public class Executor {
 		
 		Segmento s2 = new Segmento(c2);
 		String result2 = s2.getTipoSegmento().toString();
-		System.out.println(result2);
+		System.out.println(result2); // PRINTAR TIPO
 		
 		c3.setNome("Anderson");
 		c3.setEmail("anderson@braz.com");
@@ -48,14 +48,14 @@ public class Executor {
 		
 		Segmento s3 = new Segmento(c3);
 		String result3 = s3.getTipoSegmento().toString();
-		System.out.println(result3);
+		System.out.println(result3); // PRINTAR TIPO
 		
 		List<Cliente> listaCliente = Arrays.asList(c1, c2, c3);
 		
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String jsonResult = gson.toJson(listaCliente);
 		
-		System.out.println(jsonResult);
+		System.out.println(jsonResult); // PRINTAR DADOS DE ORIGEM (CLIENTE)
 		 
 
 	}
