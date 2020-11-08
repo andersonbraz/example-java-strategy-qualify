@@ -1,2 +1,3 @@
-# example-java-strataegy-qualify
-example-java-strataegy-qualify
+# example-java-strategy-qualify
+
+example-java-strategy-qualify
