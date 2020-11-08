@@ -1,5 +1,8 @@
 package br.com.solution.main;
 
+import java.util.Arrays;
+import java.util.List;
+
 import br.com.solution.model.Cliente;
 
 public class Executor {
@@ -17,7 +20,6 @@ public class Executor {
 		c1.setCampoBeta(10);
 		c1.setCampoXadrez(10);
 		
-		
 		c2.setNome("Gustavo");
 		c2.setEmail("gustavo@braz.com");
 		c2.setTelefone("(61)8888-7777");
@@ -32,6 +34,11 @@ public class Executor {
 		c3.setCampoBeta(478);
 		c3.setCampoXadrez(8010);
 		
+		List<Cliente> listaCliente = Arrays.asList(c1, c2, c3);
+		
+		
+		System.out.println(listaCliente.toString());
+		 
 
 	}
 

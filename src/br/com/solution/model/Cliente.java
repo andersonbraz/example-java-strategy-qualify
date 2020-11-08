@@ -1,5 +1,6 @@
 package br.com.solution.model;
 
+import br.com.solution.util.TipoSegmento;
 
 public class Cliente {
 	
@@ -11,12 +12,12 @@ public class Cliente {
 	public int campoBeta;
 	public int campoXadrez;
 	
+	public TipoSegmento tipoSegmento;
+	
 	/*
 	 * 
 	 * TipoA = campoAlfa com valores: 200, 300, 400, 500
-	 * 
 	 * TipoB = campoAlfa com valores: 600, 700, 800, 900
-	 * 
 	 * TipoC = 
 	 * 
 	 * campoAlfa, campoBeta, campoXadrez
