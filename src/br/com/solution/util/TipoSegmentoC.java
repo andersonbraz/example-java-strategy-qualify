@@ -30,7 +30,7 @@ public enum TipoSegmentoC {
 		return campoXadrez;
 	}
 	
-	public TipoSegmento getSegmento() {
+	public TipoSegmento getTipoSegmento() {
 		return TipoSegmento.TIPO_C;
 	}
 

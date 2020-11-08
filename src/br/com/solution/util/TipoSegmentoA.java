@@ -17,7 +17,7 @@ public enum TipoSegmentoA {
 		return campoAlfa;
 	}
 	
-	public TipoSegmento getSegmento() {
+	public TipoSegmento getTipoSegmento() {
 		return TipoSegmento.TIPO_A;
 	}
 

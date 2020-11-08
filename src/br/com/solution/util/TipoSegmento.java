@@ -12,7 +12,7 @@ public enum TipoSegmento {
 		this.valorSegmento = valor;
 	}
 	
-	public int getValorSegmento() {
+	public int getSegmento() {
 		return valorSegmento;
 	}
 	

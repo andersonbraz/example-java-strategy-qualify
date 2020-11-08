@@ -46,7 +46,6 @@ public class Segmento {
 		System.out.println("check: " + this.campoBeta);
 		System.out.println("check: " + this.campoXadrez);
 		
-		
 		return TipoSegmento.TIPO_A;
 		
 	}
