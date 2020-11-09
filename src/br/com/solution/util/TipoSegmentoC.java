@@ -36,11 +36,11 @@ public enum TipoSegmentoC {
 	public static Optional<TipoSegmentoC> getTipoSegmento(String alfa, String beta, String xadrez) {
 		
 		Optional<TipoSegmentoC> result =  Arrays
-		.stream(TipoSegmentoC.values())
-		.filter(tipoAlfa -> tipoAlfa.getValorAlfa().equals(alfa.toString()))
-		.filter(tipoBeta -> tipoBeta.getValorBeta().equals(beta.toString()))
-		.filter(tipoZadrez -> tipoZadrez.getValorXadrez().equals(xadrez.toString()))
-		.findFirst();
+			.stream(TipoSegmentoC.values())
+			.filter(tipoAlfa -> tipoAlfa.getValorAlfa().equals(alfa.toString()))
+			.filter(tipoBeta -> tipoBeta.getValorBeta().equals(beta.toString()))
+			.filter(tipoZadrez -> tipoZadrez.getValorXadrez().equals(xadrez.toString()))
+			.findFirst();
 		
 		return result;
 				
