@@ -2,17 +2,17 @@ package br.com.solution.util;
 
 public enum TipoSegmento {
 	
-	TIPO_A(1),
-	TIPO_B(2),
-	TIPO_C(3);
+	TIPO_A("1"),
+	TIPO_B("2"),
+	TIPO_C("3");
 	
-	private final int valorSegmento;
+	private final String valorSegmento;
 	
-	TipoSegmento(int valor) {
+	TipoSegmento(String valor) {
 		this.valorSegmento = valor;
 	}
 	
-	public int getSegmento() {
+	public String getSegmento() {
 		return valorSegmento;
 	}
 	

@@ -20,9 +20,9 @@ public class Executor {
 		c1.setNome("João");
 		c1.setEmail("joao@braz.com");
 		c1.setTelefone("(61)9999-8888");
-		c1.setCampoAlfa(200);
-		c1.setCampoBeta(10);
-		c1.setCampoXadrez(10);
+		c1.setCampoAlfa("200");
+		c1.setCampoBeta("10");
+		c1.setCampoXadrez("10");
 		
 		Segmento s1 = new Segmento(c1);
 		String result1 = s1.getTipoSegmento().toString();
@@ -31,9 +31,9 @@ public class Executor {
 		c2.setNome("Gustavo");
 		c2.setEmail("gustavo@braz.com");
 		c2.setTelefone("(61)8888-7777");
-		c2.setCampoAlfa(700);
-		c2.setCampoBeta(10);
-		c2.setCampoXadrez(10);
+		c2.setCampoAlfa("700");
+		c2.setCampoBeta("10");
+		c2.setCampoXadrez("10");
 		
 		Segmento s2 = new Segmento(c2);
 		String result2 = s2.getTipoSegmento().toString();
@@ -42,9 +42,9 @@ public class Executor {
 		c3.setNome("Anderson");
 		c3.setEmail("anderson@braz.com");
 		c3.setTelefone("(61)7777-6666");
-		c3.setCampoAlfa(300);
-		c3.setCampoBeta(478);
-		c3.setCampoXadrez(8010);
+		c3.setCampoAlfa("300");
+		c3.setCampoBeta("478");
+		c3.setCampoXadrez("8010");
 		
 		Segmento s3 = new Segmento(c3);
 		String result3 = s3.getTipoSegmento().toString();

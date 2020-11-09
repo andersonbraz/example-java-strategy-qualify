@@ -8,9 +8,9 @@ public class Cliente {
 	public String telefone;
 	public String email;
 	
-	public int campoAlfa;
-	public int campoBeta;
-	public int campoXadrez;
+	public String campoAlfa;
+	public String campoBeta;
+	public String campoXadrez;
 	
 	public TipoSegmento tipoSegmento;
 	
@@ -60,27 +60,27 @@ public class Cliente {
 		this.email = email;
 	}
 	
-	public int getCampoAlfa() {
+	public String getCampoAlfa() {
 		return campoAlfa;
 	}
 	
-	public void setCampoAlfa(int campoAlfa) {
+	public void setCampoAlfa(String campoAlfa) {
 		this.campoAlfa = campoAlfa;
 	}
 	
-	public int getCampoBeta() {
+	public String getCampoBeta() {
 		return campoBeta;
 	}
 	
-	public void setCampoBeta(int campoBeta) {
+	public void setCampoBeta(String campoBeta) {
 		this.campoBeta = campoBeta;
 	}
 	
-	public int getCampoXadrez() {
+	public String getCampoXadrez() {
 		return campoXadrez;
 	}
 	
-	public void setCampoXadrez(int campoXadrez) {
+	public void setCampoXadrez(String campoXadrez) {
 		this.campoXadrez = campoXadrez;
 	}
 
