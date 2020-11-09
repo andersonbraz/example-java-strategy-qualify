@@ -12,7 +12,7 @@ public enum TipoSegmentoA {
 	
 	private final String campoAlfa;
 	
-	TipoSegmentoA(String valorAlfa) {
+	private TipoSegmentoA(String valorAlfa) {
 		this.campoAlfa = valorAlfa;
 	}
 	
