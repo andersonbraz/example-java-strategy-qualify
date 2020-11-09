@@ -62,7 +62,7 @@ public class Executor {
 		String result4 = s4.getTipoSegmento().toString();
 		System.out.println(result4); // PRINTAR TIPO
 		
-		List<Cliente> listaCliente = Arrays.asList(c1, c2, c3);
+		List<Cliente> listaCliente = Arrays.asList(c1, c2, c3, c4);
 		
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String jsonResult = gson.toJson(listaCliente);
