@@ -71,9 +71,6 @@ public class Executor {
 		System.out.println(result3); // PRINTAR TIPO do Cliente3
 		System.out.println(result4); // PRINTAR TIPO do Cliente4
 		
-		
-		 
-
 	}
 
 }
