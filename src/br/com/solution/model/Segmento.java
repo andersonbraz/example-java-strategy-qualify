@@ -3,7 +3,6 @@ package br.com.solution.model;
 import java.util.Optional;
 
 import br.com.solution.util.TipoSegmento;
-import br.com.solution.util.TipoSegmentoB;
 import br.com.solution.util.TipoSegmentoC;
 
 public class Segmento {
@@ -56,7 +55,13 @@ public class Segmento {
 	}
 	
 	/*
-	public TipoSegmento getTipoSegment() {
+	 * 
+	 * 
+	 *  Incremento correto deve ser baseado no código abaixo: 
+	 *  
+	 *  
+	 * 
+	public TipoSegmento getTipoSegmento() {
 		
 		
 		if(!TipoSegmentoC.getTipoSegmento(this.campoAlfa, this.campoBeta, this.campoXadrez).equals(Empty)){
@@ -69,7 +74,7 @@ public class Segmento {
 			return TipoSegmento.TIPO_UNDEFINED;
 		}
 		
-		
 	}
 	*/
+	
 }

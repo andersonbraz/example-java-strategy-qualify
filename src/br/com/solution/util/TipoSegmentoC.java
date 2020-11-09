@@ -42,7 +42,6 @@ public enum TipoSegmentoC {
 		.filter(tipoZadrez -> tipoZadrez.getValorXadrez().equals(xadrez.toString()))
 		.findFirst();
 		
-		
 		return result;
 				
 	}
