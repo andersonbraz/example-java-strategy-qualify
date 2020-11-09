@@ -3,6 +3,7 @@ package br.com.solution.model;
 import java.util.Optional;
 
 import br.com.solution.util.TipoSegmento;
+import br.com.solution.util.TipoSegmentoB;
 import br.com.solution.util.TipoSegmentoC;
 
 public class Segmento {
@@ -45,12 +46,30 @@ public class Segmento {
 	
 	public Optional<TipoSegmentoC> getTipoSegmento() {
 		
+		
 		System.out.println("check: " + this.campoAlfa);
 		System.out.println("check: " + this.campoBeta);
 		System.out.println("check: " + this.campoXadrez);
-		
+		// ordem de verificação pelos tipo: C, B, A
 		return TipoSegmentoC.getTipoSegmento(this.campoAlfa, this.campoBeta, this.campoXadrez);
 		
 	}
 	
+	/*
+	public TipoSegmento getTipoSegment() {
+		
+		
+		if(!TipoSegmentoC.getTipoSegmento(this.campoAlfa, this.campoBeta, this.campoXadrez).equals(Empty)){
+			return TipoSegmento.TIPO_C;
+		}else if(!TipoSegmentoB.getTipoSegmento(this.campoAlfa).equals(Empty)) {
+			return TipoSegmento.TIPO_B;
+		}else if(!TipoSegmentoB.getTipoSegmento(this.campoAlfa).equals(Empty)) {
+			return TipoSegmento.TIPO_A;
+		}else{
+			return TipoSegmento.TIPO_UNDEFINED;
+		}
+		
+		
+	}
+	*/
 }

@@ -4,7 +4,8 @@ public enum TipoSegmento {
 	
 	TIPO_A("1"),
 	TIPO_B("2"),
-	TIPO_C("3");
+	TIPO_C("3"),
+	TIPO_UNDEFINED("0");
 	
 	private final String valorSegmento;
 	
