@@ -35,7 +35,7 @@ public enum TipoSegmentoC {
 	
 	public static Optional<TipoSegmentoC> getTipoSegmento(String alfa, String beta, String xadrez) {
 		
-		return Arrays
+		Optional<TipoSegmentoC> result =  Arrays
 		.stream(TipoSegmentoC.values())
 		.filter(tipoAlfa -> tipoAlfa.getValorAlfa().equals(alfa.toString()))
 		.filter(tipoBeta -> tipoBeta.getValorBeta().equals(beta.toString()))
@@ -43,7 +43,7 @@ public enum TipoSegmentoC {
 		.findFirst();
 		
 		
-		//return TipoSegmento.TIPO_C;
+		return result;
 				
 	}
 

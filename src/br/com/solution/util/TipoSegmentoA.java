@@ -1,5 +1,8 @@
 package br.com.solution.util;
 
+import java.util.Arrays;
+import java.util.Optional;
+
 public enum TipoSegmentoA {
 	
 	TIPO_A_200("200"),
@@ -17,10 +20,16 @@ public enum TipoSegmentoA {
 		return campoAlfa;
 	}
 	
-	public TipoSegmento getTipoSegmento() {
-		return TipoSegmento.TIPO_A;
+	public static Optional<TipoSegmentoA> getTipoSegmento(String alfa) {
+		
+		Optional<TipoSegmentoA> result =  Arrays
+		.stream(TipoSegmentoA.values())
+		.filter(tipoAlfa -> tipoAlfa.getValorAlfa().equals(alfa.toString()))
+		.findFirst();
+		
+		return result;
+				
 	}
-	
 	
 
 }
