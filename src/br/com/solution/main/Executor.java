@@ -16,6 +16,7 @@ public class Executor {
 		Cliente c1 = new Cliente();
 		Cliente c2 = new Cliente();
 		Cliente c3 = new Cliente();
+		Cliente c4 = new Cliente();
 		
 		c1.setNome("João");
 		c1.setEmail("joao@braz.com");
@@ -49,6 +50,17 @@ public class Executor {
 		Segmento s3 = new Segmento(c3);
 		String result3 = s3.getTipoSegmento().toString();
 		System.out.println(result3); // PRINTAR TIPO
+		
+		c4.setNome("Jonatas");
+		c4.setEmail("jonatas@braz.com");
+		c4.setTelefone("(61)7777-6666");
+		c4.setCampoAlfa("200");
+		c4.setCampoBeta("213");
+		c4.setCampoXadrez("9004");
+		
+		Segmento s4 = new Segmento(c4);
+		String result4 = s4.getTipoSegmento().toString();
+		System.out.println(result4); // PRINTAR TIPO
 		
 		List<Cliente> listaCliente = Arrays.asList(c1, c2, c3);
 		
