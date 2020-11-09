@@ -66,10 +66,10 @@ public class Executor {
 		String result4 = s4.getTipoSegmento().toString();
 		
 		System.out.println("############ Step 02 - Check Tipo Segmento dos Clientes ############ ");
-		System.out.println(result1); // PRINTAR TIPO
-		System.out.println(result2); // PRINTAR TIPO
-		System.out.println(result3); // PRINTAR TIPO
-		System.out.println(result4); // PRINTAR TIPO
+		System.out.println(result1); // PRINTAR TIPO do Cliente1
+		System.out.println(result2); // PRINTAR TIPO do Cliente2
+		System.out.println(result3); // PRINTAR TIPO do Cliente3
+		System.out.println(result4); // PRINTAR TIPO do Cliente4
 		
 		
 		 
