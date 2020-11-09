@@ -44,19 +44,6 @@ public class Segmento {
 	public void setCampoXadrez(String campoXadrez) {
 		this.campoXadrez = campoXadrez;
 	}
-	
-	/*
-	public Optional<TipoSegmentoC> getTipoSegmentox() {
-		
-		
-		System.out.println("check: " + this.campoAlfa);
-		System.out.println("check: " + this.campoBeta);
-		System.out.println("check: " + this.campoXadrez);
-		// ordem de verificação pelos tipo: C, B, A
-		return TipoSegmentoC.getTipoSegmento(this.campoAlfa, this.campoBeta, this.campoXadrez);
-		
-	}
-	*/
 
 	public TipoSegmento getTipoSegmento() {
 		
