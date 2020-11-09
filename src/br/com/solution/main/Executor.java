@@ -25,20 +25,12 @@ public class Executor {
 		c1.setCampoBeta("10");
 		c1.setCampoXadrez("10");
 		
-		Segmento s1 = new Segmento(c1);
-		String result1 = s1.getTipoSegmento().toString();
-		System.out.println(result1); // PRINTAR TIPO
-		
 		c2.setNome("Gustavo");
 		c2.setEmail("gustavo@braz.com");
 		c2.setTelefone("(61)8888-7777");
 		c2.setCampoAlfa("700");
 		c2.setCampoBeta("10");
 		c2.setCampoXadrez("10");
-		
-		Segmento s2 = new Segmento(c2);
-		String result2 = s2.getTipoSegmento().toString();
-		System.out.println(result2); // PRINTAR TIPO
 		
 		c3.setNome("Anderson");
 		c3.setEmail("anderson@braz.com");
@@ -47,10 +39,6 @@ public class Executor {
 		c3.setCampoBeta("478");
 		c3.setCampoXadrez("8010");
 		
-		Segmento s3 = new Segmento(c3);
-		String result3 = s3.getTipoSegmento().toString();
-		System.out.println(result3); // PRINTAR TIPO
-		
 		c4.setNome("Jonatas");
 		c4.setEmail("jonatas@braz.com");
 		c4.setTelefone("(61)7777-6666");
@@ -58,16 +46,32 @@ public class Executor {
 		c4.setCampoBeta("213");
 		c4.setCampoXadrez("9004");
 		
-		Segmento s4 = new Segmento(c4);
-		String result4 = s4.getTipoSegmento().toString();
-		System.out.println(result4); // PRINTAR TIPO
-		
 		List<Cliente> listaCliente = Arrays.asList(c1, c2, c3, c4);
 		
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String jsonResult = gson.toJson(listaCliente);
 		
-		System.out.println(jsonResult); // PRINTAR DADOS DE ORIGEM (CLIENTE)
+		System.out.println("############  Step 01 - Definição dos Clientes ############");
+		System.out.println(jsonResult); // PRINTAR DADOS DE ORIGEM (CLIENTES)
+		
+		/*	Demonstração da Classe Especilizada para Atender Segmento	*/
+		
+		Segmento s1 = new Segmento(c1);
+		String result1 = s1.getTipoSegmento().toString();
+		Segmento s2 = new Segmento(c2);
+		String result2 = s2.getTipoSegmento().toString();	
+		Segmento s3 = new Segmento(c3);
+		String result3 = s3.getTipoSegmento().toString();
+		Segmento s4 = new Segmento(c4);
+		String result4 = s4.getTipoSegmento().toString();
+		
+		System.out.println("############ Step 02 - Check Tipo Segmento dos Clientes ############ ");
+		System.out.println(result1); // PRINTAR TIPO
+		System.out.println(result2); // PRINTAR TIPO
+		System.out.println(result3); // PRINTAR TIPO
+		System.out.println(result4); // PRINTAR TIPO
+		
+		
 		 
 
 	}
