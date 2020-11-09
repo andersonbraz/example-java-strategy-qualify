@@ -22,8 +22,8 @@ public class Executor {
 		c1.setEmail("joao@braz.com");
 		c1.setTelefone("(61)9999-8888");
 		c1.setCampoAlfa("200");
-		c1.setCampoBeta("10");
-		c1.setCampoXadrez("10");
+		c1.setCampoBeta("478");
+		c1.setCampoXadrez("9004");
 		
 		c2.setNome("Gustavo");
 		c2.setEmail("gustavo@braz.com");
@@ -35,8 +35,8 @@ public class Executor {
 		c3.setNome("Anderson");
 		c3.setEmail("anderson@braz.com");
 		c3.setTelefone("(61)7777-6666");
-		c3.setCampoAlfa("300");
-		c3.setCampoBeta("478");
+		c3.setCampoAlfa("200");
+		c3.setCampoBeta("10");
 		c3.setCampoXadrez("8010");
 		
 		c4.setNome("Jonatas");

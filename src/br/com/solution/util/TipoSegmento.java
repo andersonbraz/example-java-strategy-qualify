@@ -9,7 +9,7 @@ public enum TipoSegmento {
 	
 	private final String valorSegmento;
 	
-	TipoSegmento(String valor) {
+	private TipoSegmento(String valor) {
 		this.valorSegmento = valor;
 	}
 	
