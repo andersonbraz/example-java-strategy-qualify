@@ -62,7 +62,6 @@ public class Segmento {
 		
 		Optional<String> nothing = Optional.empty();
 		
-		
 		if(!TipoSegmentoC.getTipoSegmento(this.campoAlfa, this.campoBeta, this.campoXadrez).equals(nothing)){
 			return TipoSegmento.TIPO_C;
 		}else if(!TipoSegmentoB.getTipoSegmento(this.campoAlfa).equals(nothing)) {
