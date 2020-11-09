@@ -3,6 +3,8 @@ package br.com.solution.model;
 import java.util.Optional;
 
 import br.com.solution.util.TipoSegmento;
+import br.com.solution.util.TipoSegmentoA;
+import br.com.solution.util.TipoSegmentoB;
 import br.com.solution.util.TipoSegmentoC;
 
 public class Segmento {
@@ -43,7 +45,8 @@ public class Segmento {
 		this.campoXadrez = campoXadrez;
 	}
 	
-	public Optional<TipoSegmentoC> getTipoSegmento() {
+	/*
+	public Optional<TipoSegmentoC> getTipoSegmentox() {
 		
 		
 		System.out.println("check: " + this.campoAlfa);
@@ -53,28 +56,23 @@ public class Segmento {
 		return TipoSegmentoC.getTipoSegmento(this.campoAlfa, this.campoBeta, this.campoXadrez);
 		
 	}
-	
-	/*
-	 * 
-	 * 
-	 *  Incremento correto deve ser baseado no código abaixo: 
-	 *  
-	 *  
-	 * 
+	*/
+
 	public TipoSegmento getTipoSegmento() {
 		
+		Optional<String> nothing = Optional.empty();
 		
-		if(!TipoSegmentoC.getTipoSegmento(this.campoAlfa, this.campoBeta, this.campoXadrez).equals(Empty)){
+		
+		if(!TipoSegmentoC.getTipoSegmento(this.campoAlfa, this.campoBeta, this.campoXadrez).equals(nothing)){
 			return TipoSegmento.TIPO_C;
-		}else if(!TipoSegmentoB.getTipoSegmento(this.campoAlfa).equals(Empty)) {
+		}else if(!TipoSegmentoB.getTipoSegmento(this.campoAlfa).equals(nothing)) {
 			return TipoSegmento.TIPO_B;
-		}else if(!TipoSegmentoB.getTipoSegmento(this.campoAlfa).equals(Empty)) {
+		}else if(!TipoSegmentoA.getTipoSegmento(this.campoAlfa).equals(nothing)) {
 			return TipoSegmento.TIPO_A;
 		}else{
 			return TipoSegmento.TIPO_UNDEFINED;
 		}
 		
 	}
-	*/
 	
 }
